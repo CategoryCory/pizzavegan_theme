@@ -91,6 +91,11 @@
         &__navlink {
             margin-left: 1rem;
             margin-bottom: 0;
+            transition: color 250ms;
+
+            &:hover {
+                color: variables.$primary-500;
+            }
         }
 
         &__menu-btn {
