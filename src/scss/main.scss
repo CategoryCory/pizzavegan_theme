@@ -1,5 +1,6 @@
 @use "./utilities/site-resets";
 @use "./utilities/text";
-@use "./utilities/navlinks";
+@use "./utilities/links";
+@use "./layouts/page-heading";
 @use "./layouts/post-grid";
 @use "./partials/navbar";

@@ -1,0 +1,60 @@
+@use "../utilities/variables";
+
+.page-heading {
+    position: relative;
+    margin: 1.5rem auto;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 800px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: variables.$primary-900;
+        z-index: -1;
+        transform: skewY(-4deg);
+    }
+
+    &::after {
+        position: absolute;
+        display: inline-block;
+        content: "";
+        background: url("../img/pizza-slice-resized.png") 0 0 no-repeat;
+        width: 75px;
+        height: 75px;
+        top: -25px;
+        left: 0;
+    }
+
+    &__title {
+        font-size: calc(2em + 1vw);
+        color: variables.$high-contrast;
+    }
+
+    &__subtitle {
+        color: variables.$low-contrast;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .page-heading {
+        margin: 3rem auto 1rem;
+        padding: 3rem 2rem;
+
+        &::before {
+            transform: skew(-10deg, -4deg);
+        }
+
+        &::after {
+            left: -25px;
+        }
+
+        &__subtitle {
+            font-size: 1.2em;
+        }
+    }
+}

@@ -12,6 +12,7 @@
     .card {
         margin-bottom: 1.5rem;
         background-color: variables.$white;
+        box-shadow: 0 0 10px variables.$neutral-900;
         transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
 
         &__image {
