@@ -1,0 +1,43 @@
+@use "../utilities/variables";
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    justify-content: center;
+    gap: 1.75rem;
+    margin: 4rem auto;
+    width: 90%;
+    max-width: 1350px;
+
+    .card {
+        margin-bottom: 1.5rem;
+        background-color: variables.$white;
+        transition: all 250ms ease-in-out;
+
+        &__image {
+            width: 100%;
+            height: calc(250px + 4vw);
+            object-fit: cover;
+            background-position: center center;
+        }
+
+        &__body {
+            padding: 1.75rem 1.25rem 2.5rem;
+        }
+
+        &__title {
+            margin-bottom: 0.25em;
+            font-size: 1.5em;
+            color: variables.$primary-500;
+        }
+
+        &__meta {
+            color: variables.$low-contrast;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 30px 5px variables.$neutral-800;
+        }
+    }
+}

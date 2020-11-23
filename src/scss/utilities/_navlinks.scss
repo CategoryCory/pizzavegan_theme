@@ -1,0 +1,10 @@
+@use "./variables";
+
+a {
+    color: variables.$high-contrast;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
