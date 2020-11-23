@@ -27,12 +27,20 @@
 
         &__title {
             margin-bottom: 0.25em;
-            font-size: 1.5em;
-            color: variables.$primary-500;
+            font-family: "Cormorant Garamond", Cambria, Cochin, Georgia, Times,
+                "Times New Roman", serif;
+            font-size: 1.75em;
+            color: variables.$primary-400;
         }
 
         &__meta {
+            margin-bottom: 1em;
             color: variables.$low-contrast;
+            font-size: 0.9em;
+        }
+
+        &__subtitle {
+            color: variables.$high-contrast;
         }
 
         &:hover {

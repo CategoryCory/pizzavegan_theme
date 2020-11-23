@@ -21,7 +21,21 @@
     }
 
     &__navlink {
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__navsocial {
+        display: flex;
+
+        a {
+            margin-right: 1.5rem;
+            font-size: 1.5em;
+            transition: color 250ms;
+
+            &:hover {
+                color: variables.$primary-500;
+            }
+        }
     }
 
     &__menu-btn {
@@ -100,6 +114,15 @@
             }
         }
 
+        &__navsocial {
+            margin-left: 1rem;
+
+            a {
+                margin-right: 0.75rem;
+                font-size: 1em;
+            }
+        }
+
         &__menu-btn {
             display: none;
         }
@@ -109,6 +132,10 @@
 @media screen and (min-width: 1200px) {
     .site-header {
         &__navlink {
+            margin-left: 2rem;
+        }
+
+        &__navsocial {
             margin-left: 2rem;
         }
     }
