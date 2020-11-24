@@ -28,10 +28,8 @@
 
         &__title {
             margin-bottom: 0.25em;
-            font-family: "Cormorant Garamond", Cambria, Cochin, Georgia, Times,
-                "Times New Roman", serif;
-            font-size: 1.75em;
-            color: variables.$primary-400;
+            font-size: 1.5em;
+            line-height: 1.1;
         }
 
         &__meta {
@@ -47,6 +45,16 @@
         &:hover {
             transform: scale(1.02);
             box-shadow: 0 0 30px 5px variables.$neutral-800;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .post-grid {
+        .card {
+            &__title {
+                font-size: 1.75em;
+            }
         }
     }
 }
