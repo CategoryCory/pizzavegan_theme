@@ -2,8 +2,7 @@
 
 .post-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
     gap: 1.75rem;
     margin: 2rem auto;
     width: 90%;
@@ -13,9 +12,7 @@
         position: relative;
         margin-bottom: 1.5rem;
         background-color: variables.$white;
-        // box-shadow: 0 0 0.5em -0.15em variables.$neutral-800;
         box-shadow: 0 0.125rem 0.25rem 0 variables.$neutral-900;
-        // transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
         transition: transform 250ms ease-in-out;
 
         &::after {
@@ -25,15 +22,14 @@
             bottom: 0;
             left: 0;
             right: 0;
-            box-shadow: 0 0.5rem 1rem -0.25rem variables.$neutral-800;
+            box-shadow: 0 1rem 1.2rem -0.75rem variables.$neutral-800;
             opacity: 0;
             transition: opacity 250ms ease-in-out;
             z-index: -1;
         }
 
         &:hover {
-            transform: translateY(-0.35em) scale(1.02);
-            // box-shadow: 0 0 30px 5px variables.$neutral-800;
+            transform: translateY(-0.2em);
         }
 
         &:hover::after {
