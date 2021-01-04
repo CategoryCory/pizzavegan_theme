@@ -3,7 +3,7 @@
 .page-heading {
     position: relative;
     margin: 1.5rem auto;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     width: 100%;
     max-width: 800px;
 
@@ -17,18 +17,17 @@
         background-color: variables.$primary-900;
         z-index: -1;
         transform: skewY(-4deg);
-        border-radius: 10px;
     }
 
-    &::after {
+    &__image {
         position: absolute;
         display: inline-block;
         content: "";
-        background: url("../img/pizza-slice-resized.png") 0 0 no-repeat;
-        width: 75px;
-        height: 75px;
+        // background: url("../img/pizza-slice-resized.png") 0 0 no-repeat;
+        width: 70px;
+        height: 70px;
         top: -25px;
-        left: 0;
+        left: -10px;
     }
 
     &__title {
@@ -47,10 +46,11 @@
         padding: 3rem 2rem;
 
         &::before {
+            border-radius: 10px;
             transform: skew(-7deg, -3deg);
         }
 
-        &::after {
+        &__image {
             left: -25px;
             top: -15px;
         }
