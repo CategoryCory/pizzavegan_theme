@@ -1,10 +1,31 @@
 @use "./variables";
 
-a {
+a,
+.text-link {
+    position: relative;
     color: variables.$high-contrast;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.text-link:hover {
     cursor: pointer;
+}
+
+.text-link::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: -2px;
+    right: -2px;
+    background-color: variables.$primary-900;
+    z-index: -10;
+    transform: scaleY(15%);
+    transform-origin: bottom;
+    transition: transform 200ms ease-in-out;
+}
+
+.text-link:hover::after {
+    transform: scaleY(100%);
 }
