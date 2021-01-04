@@ -1,0 +1,66 @@
+@use "../utilities/variables";
+
+.card {
+    position: relative;
+    margin-bottom: 1.5rem;
+    background-color: variables.$white;
+    box-shadow: 0 0.125rem 0.25rem 0 variables.$neutral-900;
+    transition: transform 250ms ease-in-out;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 1rem 1.2rem -0.75rem variables.$neutral-800;
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+        z-index: -1;
+    }
+
+    &:hover {
+        transform: translateY(-0.2em);
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &__image {
+        width: 100%;
+        height: calc(250px + 4vw);
+        object-fit: cover;
+        background-position: center center;
+    }
+
+    &__body {
+        padding: 1.75rem 1.25rem 2.5rem;
+    }
+
+    &__title {
+        margin-bottom: 0.4em;
+        font-size: 1.5em;
+        line-height: 1.1;
+    }
+
+    &__meta {
+        margin-bottom: 1.2em;
+        color: variables.$low-contrast;
+        font-family: variables.$sans-serif;
+        font-size: 0.9em;
+    }
+
+    &__subtitle {
+        color: variables.$gray-800;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        &__title {
+            font-size: 1.75em;
+        }
+    }
+}

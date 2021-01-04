@@ -1,3 +1,5 @@
+// COLORS
+
 $primary-900: hsl(140, 52%, 90%);
 $primary-800: hsl(140, 52%, 80%);
 $primary-700: hsl(140, 52%, 70%);
@@ -29,3 +31,7 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $high-contrast: hsla(0, 0%, 0%, 0.85);
 $low-contrast: hsla(0, 0%, 0%, 0.4);
+
+// TEXT
+$sans-serif: "Jost", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$serif: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
