@@ -1,0 +1,10 @@
+@use "variables";
+
+.badge {
+    padding: 0.2em 0.7em;
+    display: inline-block;
+    font-family: variables.$sans-serif;
+    font-size: 0.8em;
+    background-color: variables.$neutral-800;
+    border-radius: 0.2em;
+}

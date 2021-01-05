@@ -26,3 +26,11 @@ h4 {
 p {
     font-family: variables.$serif;
 }
+
+.muted {
+    color: variables.$low-contrast;
+}
+
+.bold {
+    font-weight: bold;
+}
