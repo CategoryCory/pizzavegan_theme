@@ -1,0 +1,96 @@
+@use "../utilities/variables";
+
+.post {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 900px;
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: calc(1.75em + 1.5vw);
+        line-height: 1.2;
+    }
+
+    &__subtitle {
+        margin-bottom: 1.2rem;
+        font-family: variables.$sans-serif;
+        font-size: 1.2em;
+        font-weight: 200;
+        color: variables.$gray-800;
+    }
+
+    &__meta {
+        margin-bottom: 1.5rem;
+        font-family: variables.$sans-serif;
+        font-size: 1em;
+        color: variables.$high-contrast;
+    }
+
+    &__featured-image {
+        width: 100%;
+        margin-bottom: 1.75rem;
+    }
+
+    &__share-links {
+        margin-bottom: 0.7rem;
+        font-size: 1.5em;
+
+        a {
+            margin-right: 1rem;
+        }
+    }
+
+    &__content p {
+        margin-bottom: 1rem;
+        line-height: 1.75;
+    }
+
+    &__content a::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: -2px;
+        right: -2px;
+        background-color: variables.$primary-900;
+        z-index: -10;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .post {
+        &__body {
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        &__share-links {
+            margin-right: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-self: flex-start;
+            position: sticky;
+            top: 7rem;
+            font-size: 1.75em;
+
+            a {
+                margin-right: 0;
+                padding-bottom: 1rem;
+            }
+        }
+
+        &__content a::after {
+            transform: scaleY(15%);
+            transform-origin: bottom;
+            transition: transform 200ms ease-in-out;
+        }
+
+        &__content a:hover::after {
+            transform: scaleY(100%);
+        }
+    }
+}
