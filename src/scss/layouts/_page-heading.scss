@@ -36,6 +36,7 @@
     }
 
     &__subtitle {
+        font-family: variables.$sans-serif;
         color: variables.$low-contrast;
     }
 }
