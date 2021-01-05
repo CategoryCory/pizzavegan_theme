@@ -27,6 +27,12 @@ p {
     font-family: variables.$serif;
 }
 
+.responsive-heading {
+    margin-bottom: 1rem;
+    font-size: calc(1.75em + 1.5vw);
+    line-height: 1.2;
+}
+
 .muted {
     color: variables.$low-contrast;
 }
