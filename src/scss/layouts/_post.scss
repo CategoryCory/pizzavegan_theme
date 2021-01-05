@@ -27,7 +27,6 @@
     }
 
     &__featured-image {
-        width: 100%;
         margin: 1.75rem 0;
     }
 
@@ -45,15 +44,9 @@
         line-height: 1.75;
     }
 
-    &__content a::after {
-        position: absolute;
-        content: "";
-        top: 0;
-        bottom: 0;
-        left: -2px;
-        right: -2px;
+    &__content a {
+        padding: 0 0.2em;
         background-color: variables.$primary-900;
-        z-index: -10;
     }
 }
 
@@ -83,7 +76,20 @@
             }
         }
 
+        &__content a {
+            padding: 0;
+            background-color: transparent;
+        }
+
         &__content a::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: -2px;
+            right: -2px;
+            background-color: variables.$primary-900;
+            z-index: -10;
             transform: scaleY(15%);
             transform-origin: bottom;
             transition: transform 200ms ease-in-out;
