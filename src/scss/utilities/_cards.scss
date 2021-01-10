@@ -42,6 +42,7 @@
     &__title {
         margin-bottom: 0.4em;
         font-size: 1.5em;
+        font-weight: variables.$font-extra-bold;
         line-height: 1.1;
     }
 
@@ -49,11 +50,14 @@
         margin-bottom: 1.2em;
         color: variables.$low-contrast;
         font-family: variables.$sans-serif;
+        font-weight: variables.$font-regular;
         font-size: 0.9em;
     }
 
     &__subtitle {
         color: variables.$high-contrast;
+        font-family: variables.$serif;
+        font-weight: variables.$font-regular;
         line-height: 1.5;
     }
 }

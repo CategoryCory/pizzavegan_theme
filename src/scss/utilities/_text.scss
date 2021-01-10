@@ -27,25 +27,31 @@ p {
     font-family: variables.$serif;
 }
 
+b {
+    font-weight: variables.$font-bold;
+}
+
 .responsive-heading {
     margin-bottom: 1rem;
     font-size: calc(1.75em + 1vw);
+    font-weight: variables.$font-extra-bold;
     line-height: 1.2;
 }
 
 .subtitle {
     margin-bottom: 0.8rem;
     font-family: variables.$sans-serif;
-    font-size: 1.2em;
-    font-weight: 200;
-    color: variables.$gray-800;
+    font-size: 1.3em;
+    font-weight: variables.$font-light;
+    color: variables.$gray-400;
 }
 
 .meta {
     margin-bottom: 1rem;
     font-family: variables.$sans-serif;
     font-size: 1em;
-    color: variables.$high-contrast;
+    font-weight: variables.$font-regular;
+    color: variables.$low-contrast;
 }
 
 .muted {

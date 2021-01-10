@@ -18,20 +18,25 @@ $neutral-400: hsl(20, 13%, 40%);
 $neutral-300: hsl(20, 13%, 30%);
 $neutral-200: hsl(20, 13%, 20%);
 $neutral-100: hsl(20, 13%, 10%);
-$gray-900: hsla(0, 0%, 0%, 0.9);
-$gray-800: hsla(0, 0%, 0%, 0.8);
-$gray-700: hsla(0, 0%, 0%, 0.7);
-$gray-600: hsla(0, 0%, 0%, 0.6);
+$gray-900: hsla(0, 0%, 0%, 0.1);
+$gray-800: hsla(0, 0%, 0%, 0.2);
+$gray-700: hsla(0, 0%, 0%, 0.3);
+$gray-600: hsla(0, 0%, 0%, 0.4);
 $gray-500: hsla(0, 0%, 0%, 0.5);
-$gray-400: hsla(0, 0%, 0%, 0.4);
-$gray-300: hsla(0, 0%, 0%, 0.3);
-$gray-200: hsla(0, 0%, 0%, 0.2);
-$gray-100: hsla(0, 0%, 0%, 0.1);
+$gray-400: hsla(0, 0%, 0%, 0.6);
+$gray-300: hsla(0, 0%, 0%, 0.7);
+$gray-200: hsla(0, 0%, 0%, 0.8);
+$gray-100: hsla(0, 0%, 0%, 0.9);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
-$high-contrast: hsla(0, 0%, 0%, 0.85);
+$high-contrast: hsla(0, 0%, 0%, 0.8);
 $low-contrast: hsla(0, 0%, 0%, 0.4);
 
 // TEXT
 $sans-serif: "Jost", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $serif: "Lora", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 600;
+$font-extra-bold: 800;
