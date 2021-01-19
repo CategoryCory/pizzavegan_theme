@@ -27,6 +27,27 @@
         padding: 0 0.2em;
         background-color: variables.$primary-900;
     }
+
+    &__content ul {
+        margin-bottom: 1em;
+        list-style-position: inside;
+        list-style-type: circle;
+        font-size: 1.1em;
+        color: variables.$high-contrast;
+    }
+
+    &__content blockquote {
+        margin-bottom: 1.5em;
+        padding: 0.75em 1.5em;
+        border-left: 4px solid variables.$primary-500;
+        border-radius: 4px;
+        font-family: variables.$sans-serif;
+        color: variables.$gray-500;
+
+        & b {
+            color: variables.$high-contrast;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {

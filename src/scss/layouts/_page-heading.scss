@@ -3,7 +3,7 @@
 .page-heading {
     position: relative;
     margin: 1.5rem auto;
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1rem 3.5rem;
     width: 100%;
     max-width: 800px;
 
@@ -30,7 +30,8 @@
     }
 
     &__title {
-        font-size: calc(2em + 1vw);
+        font-size: calc(1.5em + 1.5vw);
+        font-weight: variables.$font-extra-bold;
         color: variables.$high-contrast;
     }
 

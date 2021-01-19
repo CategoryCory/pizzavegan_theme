@@ -123,6 +123,7 @@
 
         &__navitem {
             margin-bottom: 0;
+            position: relative;
 
             &:hover > ul {
                 transform: scaleY(1);
@@ -140,6 +141,10 @@
         }
 
         &__dropdown {
+            width: intrinsic;
+            width: -moz-max-content;
+            width: -webkit-max-content;
+            width: max-content;
             position: absolute;
             padding: 0.8rem 1.5rem;
             top: 100%;
